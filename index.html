@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Input</title>
+        <link href="style.css" rel="stylesheet" >
+    </head>
+
+    <body>
+<center>
+<input type="input" placeholder="Enter Your Name" id="input">
+<br><br><br><br><br><br><br><br><br><br>
+<button id="ok" onclick="clickhere()"> Click Here</button>
+<br><br><br><br><br><br><br><br><br><br>
+<label id="answer"></label>
+<script>
+
+function  clickhere(){
+
+var text = document.getElementById("input").value;
+
+
+
+if(document.getElementById("input").value != ""){
+
+document.getElementById("input").value = ""
+}
+
+document.getElementById("answer").innerHTML = text;
+
+
+}
+
+
+
+</script>
+</center>
+
+    </body>
+</html>
